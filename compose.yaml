@@ -1,0 +1,10 @@
+services:
+  os:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src/:/labs
+    stdin_open: true
+    tty: true
+    command: /bin/zsh
